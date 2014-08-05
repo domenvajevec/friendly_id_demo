@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
+<h1 class="page-header">
   <%= @book.name %>
-</p>
-
+</h1>
 <p>
-  <strong>Description:</strong>
   <%= @book.description %>
 </p>
-
+<%#= image_tag "/books/#{@book.id}/cover/#{@book.cover_filename}" if @book.cover_filename?%>
+<%= image_tag @book.cover.url if @book.cover?%>
 <%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Destroy', @book, method: :delete, data: { confirm: "Are you sure?"} %> |
 <%= link_to 'Back', books_path %>
+
