@@ -1,5 +1,5 @@
-<h1>Listing books</h1>
-
+<h2>Listing books</h2>
+<hr>
 <table>
   <thead>
     <tr>
@@ -23,5 +23,6 @@
 </table>
 
 <br>
-
-<%= link_to 'New Book', new_book_path %>
+<%= link_to 'New Book', new_book_path, {class: "btn btn-primary"}%>
+<br>
+<%= will_paginate @books, renderer: BootstrapPagination::Rails %>
