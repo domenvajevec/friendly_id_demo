@@ -30,6 +30,7 @@ group :develoment do
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'populator'
   gem 'faker'
+  gem 'annotate', '~> 2.6.5'
 
 end
 
@@ -49,3 +50,4 @@ gem 'friendly_id', '~> 5.0.4'
 gem 'will_paginate'
 gem 'will_paginate-bootstrap'
 gem 'carrierwave', '~> 0.10.0'
+gem 'devise', '~> 3.2.4'
